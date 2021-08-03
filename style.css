@@ -25,10 +25,7 @@ body {
   flex-direction: column;
 }
 
-.torre0,
-.torre1,
-.torre2,
-.torre3 {
+.torre {
   width: 20px;
   height: 200px;
   background-color: black;
@@ -40,11 +37,7 @@ body {
   border-bottom: 10px solid black;
 }
 
-.disco0,
-.disco1,
-.disco2,
-.disco3,
-.disco4 {
+.disco {
   height: 30px;
   background-color: lightgreen;
   border: 3px solid lightcoral;
@@ -60,19 +53,12 @@ body {
     width: 1000px;
     height: 800px;
   }
-  .torre0,
-  .torre1,
-  .torre2,
-  .torre3 {
+  .torre {
     border-radius: 50px 50px 0 0;
     border-bottom: none;
     height: 250px;
   }
-  .disco0,
-  .disco1,
-  .disco2,
-  .disco3,
-  .disco4 {
+  .disco {
     height: 40px;
     border-radius: 30px;
   }
