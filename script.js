@@ -37,6 +37,8 @@ function moverdestinoDoDisco(event) {
   vitoria();
 }
 
+function ePossivel() {}
+
 function vitoria() {
   const torre1 = document.querySelector(".torre_1").children.length;
   const torre2 = document.querySelector(".torre_2").children.length;
