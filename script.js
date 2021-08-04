@@ -34,4 +34,6 @@ function moverdestinoDoDisco(event) {
     torreSelecionada.appendChild(destinoDoDisco);
     destinoDoDiscoelecionado = false;
   }
+  
+
 }
