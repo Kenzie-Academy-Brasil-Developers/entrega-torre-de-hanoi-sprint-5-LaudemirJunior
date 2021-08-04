@@ -52,6 +52,10 @@ function moverdestinoDoDisco(event) {
       destinoDoDiscoelecionado = false;
     }
   }
+<<<<<<< HEAD
+  
+
+=======
   vitoria();
 }
 
@@ -67,4 +71,5 @@ function vitoria() {
     container.appendChild(obj);
   }
   return false;
+>>>>>>> bb08bd0413c6e072fe34b260442fed61199f92c1
 }
