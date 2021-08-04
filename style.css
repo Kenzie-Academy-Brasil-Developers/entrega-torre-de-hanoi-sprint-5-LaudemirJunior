@@ -5,6 +5,14 @@
   border: 0;
 }
 
+header {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -12,7 +20,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+  background-color: #cddcdc;
+  background-image: linear-gradient(to left, #37ecba 0%, #72afd3 100%);
   background-size: cover;
 }
 
@@ -27,23 +36,56 @@ body {
 
 .torre {
   width: 20px;
-  height: 200px;
+  height: 150px;
   background-color: black;
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
-  border-radius: 50px;
-  margin: 25px;
-  border-bottom: 10px solid black;
+  border-radius: 100px;
+  margin: 15px;
+  padding-bottom: 10px;
 }
 
 .disco {
   height: 30px;
-  background-color: lightgreen;
-  border: 3px solid lightcoral;
   margin-top: 1px;
   border-radius: 10px;
   cursor: pointer;
+  border: 2px solid #b12a5b;
+  opacity: 0.99;
+}
+
+.disco:hover {
+  opacity: 1;
+}
+
+.disco:active {
+  border: 3px solid #fff;
+}
+
+.disco_0 {
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+}
+
+.disco_1 {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.disco_2 {
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+.disco_3 {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.disco_4 {
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 @media (min-width: 600px) {
@@ -51,10 +93,9 @@ body {
     justify-content: space-around;
     flex-direction: row;
     width: 1000px;
-    height: 800px;
+    height: 700px;
   }
   .torre {
-    border-radius: 50px 50px 0 0;
     border-bottom: none;
     height: 250px;
   }
