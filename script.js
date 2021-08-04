@@ -1,5 +1,4 @@
 const container = document.querySelector("#container");
-
 for (let i = 0; i < 3; i++) {
   const obj = document.createElement("div");
   obj.classList.add("torre", `torre_${i}`);
