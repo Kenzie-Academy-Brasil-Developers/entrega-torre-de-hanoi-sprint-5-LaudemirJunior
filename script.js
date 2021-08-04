@@ -34,4 +34,19 @@ function moverdestinoDoDisco(event) {
     torreSelecionada.appendChild(destinoDoDisco);
     destinoDoDiscoelecionado = false;
   }
+  vitoria();
+}
+
+function vitoria() {
+  const torre1 = document.querySelector(".torre_1").children.length;
+  const torre2 = document.querySelector(".torre_2").children.length;
+  if (torre2 === 5 || torre1 === 5) {
+    const obj = document.createElement("div");
+    const text = document.createElement("span");
+    text.innerText = "YOU WIN!!!";
+    obj.classList.add("vitoria");
+    obj.appendChild(text);
+    container.appendChild(obj);
+  }
+  return false;
 }
