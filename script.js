@@ -4,45 +4,42 @@ for (let i = 0; i < 3; i++) {
   obj.classList.add("torre", `torre_${i}`);
   container.appendChild(obj);
 }
-
 const t1 = document.querySelector(".torre_0");
-
 for (let i = 4; i >= 0; i--) {
   const obj = document.createElement("div");
   obj.classList.add("disco", `disco_${i}`);
   obj.style.width = i * 40 + 100 + "px";
   t1.appendChild(obj);
 }
-
 const torre = document.querySelectorAll(".torre");
-
 let destinoDoDiscoelecionado = false;
 let destinoDoDisco;
-
 torre.forEach((elemento) => {
   elemento.addEventListener("click", moverdestinoDoDisco);
 });
-
 function moverdestinoDoDisco(event) {
   let torreSelecionada = event.currentTarget;
   let destinoDoDiscoNaTorre = torreSelecionada.childElementCount;
-
   if (destinoDoDiscoelecionado === false && destinoDoDiscoNaTorre > 0) {
     destinoDoDiscoelecionado = true;
     destinoDoDisco = torreSelecionada.children[destinoDoDiscoNaTorre - 1];
+    destinoDoDisco.style.border = "4px solid white";
   } else if (destinoDoDiscoelecionado === true) {
-    torreSelecionada.appendChild(destinoDoDisco);
-    destinoDoDiscoelecionado = false;
+    if (
+      torreSelecionada.children.length === 0 ||
+      torreSelecionada.lastElementChild.clientWidth > destinoDoDisco.clientWidth
+    ) {
+      torreSelecionada.appendChild(destinoDoDisco);
+      destinoDoDiscoelecionado = false;
+      destinoDoDisco.style.border = "1px solid #B12A5B";
+    } else {
+      alert("Try to move another piece!");
+      destinoDoDisco.style.border = "1px solid #B12A5B";
+      destinoDoDiscoelecionado = false;
+    }
   }
-<<<<<<< HEAD
-  
-
-=======
   vitoria();
 }
-
-function ePossivel() {}
-
 function vitoria() {
   const torre1 = document.querySelector(".torre_1").children.length;
   const torre2 = document.querySelector(".torre_2").children.length;
@@ -55,5 +52,8 @@ function vitoria() {
     container.appendChild(obj);
   }
   return false;
->>>>>>> bb08bd0413c6e072fe34b260442fed61199f92c1
 }
+
+function refreshPage(){
+  window.location.reload();
+} 
