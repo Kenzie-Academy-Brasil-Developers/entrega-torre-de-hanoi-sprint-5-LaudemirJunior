@@ -5,11 +5,13 @@
   border: 0;
 }
 header {
+  font-weight: 900;
   width: 100%;
+  color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px 0 0 0;
   font-family: "Indie Flower", cursive;
-  font-size: 25px;
+  font-size: 30px;
   background: linear-gradient(
     to top,
     rgba(20, 20, 20, 0) 0,
@@ -123,6 +125,7 @@ button{
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  
 }
 
 button:active{
@@ -135,7 +138,7 @@ button:hover{
   opacity: 0.8;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 
   body{
       display: flex;

@@ -53,7 +53,6 @@ function vitoria() {
   }
   return false;
 }
-
 function refreshPage(){
   window.location.reload();
 } 
