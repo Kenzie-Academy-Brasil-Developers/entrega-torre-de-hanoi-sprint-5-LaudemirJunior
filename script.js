@@ -27,7 +27,8 @@ function moverdestinoDoDisco(event) {
   } else if (destinoDoDiscoelecionado === true) {
     if (
       torreSelecionada.children.length === 0 ||
-      torreSelecionada.lastElementChild.clientWidth > destinoDoDisco.clientWidth
+      torreSelecionada.lastElementChild.clientWidth >=
+        destinoDoDisco.clientWidth
     ) {
       torreSelecionada.appendChild(destinoDoDisco);
       destinoDoDiscoelecionado = false;
