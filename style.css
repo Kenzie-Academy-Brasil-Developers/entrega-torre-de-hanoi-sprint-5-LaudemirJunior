@@ -11,7 +11,7 @@ header {
   text-align: center;
   padding: 10px 0 0 0;
   font-family: "Indie Flower", cursive;
-  font-size: 30px;
+  font-size: 10px;
   background: linear-gradient(
     to top,
     rgba(20, 20, 20, 0) 0,
@@ -29,10 +29,9 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #CDDCDC;
-  background-image: linear-gradient(to left, #37ECBA 0%, #72AFD3 100%);
+  background-color: #cddcdc;
+  background-image: linear-gradient(to left, #37ecba 0%, #72afd3 100%);
   background-size: cover;
-
 }
 #container {
   width: 100%;
@@ -59,11 +58,12 @@ body {
   margin-top: 1px;
   border-radius: 50px;
   cursor: pointer;
-  border: 1px solid #B12A5B;
+  border: 1px solid #b12a5b;
   opacity: 0.95;
 }
 .vitoria {
   position: absolute;
+  right: calc(50% + -150px);
   width: 300px;
   height: 100px;
   background: rgba(255, 255, 255, 0.35);
@@ -90,28 +90,28 @@ body {
 .disco_0 {
   background-image: linear-gradient(
     to right,
-    #FF8177 0%,
-    #FF867A 0%,
-    #FF8C7F 21%,
-    #F99185 52%,
-    #CF556C 78%,
-    #B12A5B 100%
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
   );
 }
 .disco_1 {
-  background-image: linear-gradient(120deg, #84FAB0 0%, #8FD3F4 100%);
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 .disco_2 {
-  background-image: linear-gradient(to right, #FA709A 0%, #FEE140 100%);
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 .disco_3 {
-  background-image: linear-gradient(to top, #30CFD0 0%, #330867 100%);
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 .disco_4 {
-  background-image: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-button{
+button {
   cursor: pointer;
   width: 180px;
   height: 50px;
@@ -121,32 +121,31 @@ button{
   font-family: "Indie Flower", cursive;
   font-weight: bold;
   border: 4px solid black;
-  background-image: linear-gradient(to left, #37ECBA 0%, #72AFD3 100%);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  
+  background-image: linear-gradient(to left, #37ecba 0%, #72afd3 100%);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-button:active{
-  background-image: linear-gradient(to left, #72AFD3 20%, #f1619d 100%);
+button:active {
+  background-image: linear-gradient(to left, #72afd3 20%, #f1619d 100%);
   position: relative;
   bottom: 5px;
   right: 5px;
 }
-button:hover{
+button:hover {
   opacity: 0.8;
 }
 
 @media (min-width: 900px) {
-
-  body{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
+  header {
+    font-size: 40px;
   }
-
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   #container {
     justify-content: space-between;
     flex-direction: row;
@@ -161,15 +160,9 @@ button:hover{
   .disco {
     height: 30px;
   }
-  button{
+  button {
     width: 250px;
     height: 80px;
     font-size: 40px;
   }
 }
-
-
-
-
-
-

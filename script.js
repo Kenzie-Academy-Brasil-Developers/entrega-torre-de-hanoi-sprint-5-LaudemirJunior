@@ -53,6 +53,6 @@ function vitoria() {
   }
   return false;
 }
-function refreshPage(){
+function refreshPage() {
   window.location.reload();
-} 
+}
